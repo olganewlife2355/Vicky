@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px;">
+
+<p>Dear {{ client.contact_name }},</p>
+
+<p>I noticed that <strong>{{ client.company_name }}</strong> is currently looking for a
+<strong>{{ client.job_title }}</strong>
+{% if client.job_location %} in {{ client.job_location }}{% endif %}.
+As a recruitment agency specializing in
+{% if client.company_industry %}the {{ client.company_industry }} sector{% else %}your industry{% endif %},
+we understand how critical it is to find the right candidate quickly and efficiently.</p>
+
+{% if client.industry_challenges %}
+<p>We know that companies in your space often face unique hiring challenges:</p>
+<ul>
+{% for challenge in client.industry_challenges %}
+    <li>{{ challenge }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+<p>At <strong>{{ agency_name }}</strong>, we have a proven track record of helping companies like yours
+overcome these challenges. Here's what we can offer:</p>
+
+<ul>
+{% for service in client.proposed_services %}
+    <li>{{ service }}</li>
+{% endfor %}
+</ul>
+
+{% if client.key_requirements %}
+<p>Based on your job posting, we've already identified the key qualifications you're seeking
+and have begun assessing our talent network for potential matches, including candidates with:</p>
+<ul>
+{% for req in client.key_requirements[:5] %}
+    <li>{{ req }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+<p><strong>Our Approach:</strong></p>
+<ol>
+    <li><strong>Deep Understanding</strong> — We start with a detailed consultation to understand your company culture, team dynamics, and specific requirements.</li>
+    <li><strong>Targeted Search</strong> — Using our extensive network and advanced sourcing techniques, we identify and engage top-tier candidates.</li>
+    <li><strong>Rigorous Screening</strong> — Every candidate goes through competency-based interviews and reference checks before presentation.</li>
+    <li><strong>Seamless Integration</strong> — We support both you and the candidate through offer negotiation and onboarding.</li>
+</ol>
+
+<p>I'd love the opportunity to discuss how we can support your hiring needs.
+Would you be open to a brief 15-minute call this week to explore a potential partnership?</p>
+
+<p>Looking forward to hearing from you.</p>
+
+<p>
+Best regards,<br>
+<strong>{{ sender_name }}</strong><br>
+{{ sender_title }}<br>
+{{ agency_name }}<br>
+{{ sender_email }}
+</p>
+
+</body>
+</html>

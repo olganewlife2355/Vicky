@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px;">
+
+<p>Dear {{ client.contact_name }},</p>
+
+<p>I wanted to follow up on my previous message regarding recruitment support for your
+<strong>{{ client.job_title }}</strong> position at <strong>{{ client.company_name }}</strong>.</p>
+
+<p>I understand you're busy, and I appreciate your time. I wanted to share a quick insight:
+based on current market data, positions similar to yours typically take
+{% if client.estimated_difficulty == "hard" %}60-90 days{% elif client.estimated_difficulty == "medium" %}30-45 days{% else %}15-30 days{% endif %}
+to fill through traditional channels. Our clients typically see this timeline reduced by 40-50%
+through our targeted approach.</p>
+
+<p>Would a brief 15-minute conversation be possible this week? I'm confident we can add
+real value to your search.</p>
+
+<p>
+Best regards,<br>
+<strong>{{ sender_name }}</strong><br>
+{{ sender_title }}<br>
+{{ agency_name }}
+</p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px;">
+
+<p>Dear {{ client.contact_name }},</p>
+
+<p>I hope this message finds you well. I'm reaching out once more regarding the
+<strong>{{ client.job_title }}</strong> role at <strong>{{ client.company_name }}</strong>.</p>
+
+<p>Since my last message, we've identified several strong candidates in our network who
+match the profile you're looking for. I'd hate for you to miss out on these potential fits.</p>
+
+<p>Here's what our partnership could look like:</p>
+<ul>
+    <li><strong>No upfront costs</strong> — You only pay when we successfully place a candidate</li>
+    <li><strong>Guarantee period</strong> — Free replacement if the hire doesn't work out within the first 90 days</li>
+    <li><strong>Dedicated support</strong> — A single point of contact managing your entire search</li>
+</ul>
+
+<p>Can I send you a brief overview of the candidate profiles we've identified?
+Just a quick reply is all I need to get started.</p>
+
+<p>
+Best regards,<br>
+<strong>{{ sender_name }}</strong><br>
+{{ sender_title }}<br>
+{{ agency_name }}
+</p>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px;">
+
+<p>Dear {{ client.contact_name }},</p>
+
+<p>I wanted to reach out one final time about the <strong>{{ client.job_title }}</strong>
+opportunity at <strong>{{ client.company_name }}</strong>.</p>
+
+<p>I completely understand that timing is everything, and perhaps now isn't the right moment
+for external recruitment support. That said, should your needs change in the future,
+I'd be happy to help.</p>
+
+<p>In the meantime, here's a standing offer:</p>
+<ul>
+    <li>A <strong>free consultation</strong> on your hiring strategy whenever you need it</li>
+    <li>Access to our <strong>salary benchmarking data</strong> for your industry</li>
+    <li>Priority service if you decide to engage our recruitment services</li>
+</ul>
+
+<p>Would any of these be valuable to you right now? If not, no worries at all —
+I wish you the best in finding the perfect candidate!</p>
+
+<p>
+Best regards,<br>
+<strong>{{ sender_name }}</strong><br>
+{{ sender_title }}<br>
+{{ agency_name }}
+</p>
+
+</body>
+</html>

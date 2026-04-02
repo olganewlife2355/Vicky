@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px;">
+
+<p>Dear {{ client.contact_name }},</p>
+
+<p>Thank you for your time and consideration regarding recruitment support for the
+<strong>{{ client.job_title }}</strong> role at <strong>{{ client.company_name }}</strong>.</p>
+
+<p>I understand that our services may not be the right fit at this time, and I truly
+appreciate you taking the time to review our proposal.</p>
+
+<p>Should your recruitment needs change in the future, please don't hesitate to reach out.
+We'd be delighted to assist <strong>{{ client.company_name }}</strong> with any
+hiring challenges down the road.</p>
+
+<p>Wishing you and your team continued success!</p>
+
+<p>
+Warm regards,<br>
+<strong>{{ sender_name }}</strong><br>
+{{ sender_title }}<br>
+{{ agency_name }}<br>
+{{ sender_email }}
+</p>
+
+</body>
+</html>
