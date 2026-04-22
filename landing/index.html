@@ -3,469 +3,195 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Creative Producer role at a fast-growing EdTech company. Remote or hybrid from Cyprus or Poland. Apply now." />
-<title>Creative Producer — EdTech | We're Hiring</title>
+<title>recrut.marketing — Open roles</title>
+<meta name="description" content="Recruitment marketing. Curated job opportunities in tech, EdTech and B2C." />
+<link rel="canonical" href="https://www.recrut.marketing/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.recrut.marketing/" />
+<meta property="og:title" content="recrut.marketing — Open roles" />
+<meta property="og:description" content="Curated job opportunities in tech, EdTech and B2C." />
+<meta property="og:site_name" content="recrut.marketing" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Inter,Arial' font-size='60' font-weight='800' fill='white'%3Er%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
   body {
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: #0f172a;
     background: #ffffff;
-    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
   }
-  img { max-width: 100%; display: block; }
-  a { color: inherit; }
+  a { color: inherit; text-decoration: none; }
   .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
-  /* Hero */
-  .hero {
+  header.hero {
     background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
     color: #fff;
     padding: 80px 0 96px;
     position: relative;
     overflow: hidden;
   }
-  .hero::before {
+  header.hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -10%;
-    width: 600px;
-    height: 600px;
+    top: -50%; right: -10%;
+    width: 600px; height: 600px;
     background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
     border-radius: 50%;
   }
-  .hero-inner { position: relative; z-index: 1; }
-  .badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.18);
-    backdrop-filter: blur(10px);
-    padding: 8px 16px;
-    border-radius: 999px;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 24px;
-    border: 1px solid rgba(255,255,255,0.25);
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 56px; position: relative; z-index: 1;
   }
+  .brand {
+    color: #fff; font-weight: 700;
+    font-size: 16px;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .brand-dot {
+    width: 28px; height: 28px; border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 800; border: 1px solid rgba(255,255,255,0.3);
+  }
+  .topbar-links a { color: #fff; font-size: 14px; opacity: 0.85; margin-left: 24px; }
+  .topbar-links a:hover { opacity: 1; }
+
+  .hero-content { position: relative; z-index: 1; max-width: 720px; }
   .hero h1 {
-    font-size: clamp(36px, 6vw, 64px);
+    font-size: clamp(38px, 6vw, 60px);
     font-weight: 800;
     line-height: 1.1;
     margin: 0 0 24px;
     letter-spacing: -0.02em;
   }
-  .hero p.lead {
+  .hero p {
     font-size: clamp(17px, 2vw, 20px);
-    max-width: 680px;
-    margin: 0 0 36px;
+    margin: 0;
     opacity: 0.95;
   }
-  .hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 40px;
-  }
-  .chip {
-    background: rgba(255,255,255,0.15);
-    padding: 8px 14px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    border: 1px solid rgba(255,255,255,0.2);
-  }
-  .btn {
-    display: inline-block;
-    padding: 16px 36px;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    text-decoration: none;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    cursor: pointer;
-    border: none;
-  }
-  .btn-primary {
-    background: #ffffff;
-    color: #6366f1;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
 
-  /* Sections */
   section { padding: 72px 0; }
   section h2 {
-    font-size: clamp(26px, 4vw, 36px);
+    font-size: clamp(24px, 3vw, 32px);
     font-weight: 700;
-    margin: 0 0 16px;
+    margin: 0 0 32px;
     letter-spacing: -0.01em;
   }
-  section h2 + p.sub {
-    font-size: 17px;
-    color: #475569;
-    margin: 0 0 40px;
-    max-width: 720px;
-  }
-  .intro p { font-size: 17px; color: #334155; margin: 0 0 18px; }
 
-  /* List blocks */
-  .block {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 36px;
-    margin-bottom: 20px;
-  }
-  .block h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0 0 20px;
-    color: #0f172a;
-  }
-  .block ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .block ul li {
-    position: relative;
-    padding-left: 32px;
-    margin-bottom: 12px;
-    color: #334155;
-    font-size: 16px;
-  }
-  .block ul li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 8px;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
-    border-radius: 50%;
-    box-shadow: inset 0 0 0 4px #fff, 0 0 0 1px #6366f1;
-  }
-  .block.nice ul li::before {
-    background: linear-gradient(135deg, #10b981, #06b6d4);
-    box-shadow: inset 0 0 0 4px #fff, 0 0 0 1px #10b981;
-  }
-
-  /* Benefits grid */
-  .benefits {
-    background: linear-gradient(180deg, #faf5ff 0%, #fff 100%);
-  }
-  .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-  }
-  .benefit {
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 28px;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-  .benefit:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(99,102,241,0.1); }
-  .benefit .icon {
-    width: 44px; height: 44px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
-    color: #fff;
+  .jobs { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .job-card {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px 32px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #fff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  .job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(99,102,241,0.12);
+    border-color: #c7d2fe;
+  }
+  .job-info { flex: 1; min-width: 0; }
+  .job-tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6366f1;
+    background: #eef2ff;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  .job-info h3 {
+    margin: 0 0 8px;
     font-size: 22px;
-    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
-  .benefit h4 { margin: 0 0 8px; font-size: 17px; font-weight: 600; }
-  .benefit p { margin: 0; color: #64748b; font-size: 15px; }
-
-  /* Application form */
-  .apply {
-    background: #0f172a;
-    color: #fff;
+  .job-meta { color: #64748b; font-size: 15px; }
+  .job-arrow {
+    flex-shrink: 0;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex; align-items: center; justify-content: center;
+    color: #6366f1;
+    font-size: 18px;
+    transition: background 0.15s ease, transform 0.15s ease;
   }
-  .apply h2 { color: #fff; }
-  .apply p.sub { color: #cbd5e1; }
-  .form-card {
-    background: #fff;
-    color: #0f172a;
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 640px;
-    margin: 40px auto 0;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-  }
-  .field { margin-bottom: 20px; }
-  .field label {
-    display: block;
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #334155;
-  }
-  .field label .req { color: #ef4444; }
-  .field input[type="text"],
-  .field input[type="email"],
-  .field input[type="url"],
-  .field input[type="tel"],
-  .field textarea,
-  .field input[type="file"] {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #cbd5e1;
-    border-radius: 10px;
-    font-family: inherit;
-    font-size: 15px;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
-    background: #fff;
-  }
-  .field input:focus,
-  .field textarea:focus {
-    outline: none;
-    border-color: #6366f1;
-    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
-  }
-  .field textarea { min-height: 110px; resize: vertical; }
-  .field .hint { font-size: 13px; color: #64748b; margin-top: 6px; }
-  .btn-submit {
-    width: 100%;
+  .job-card:hover .job-arrow {
     background: linear-gradient(135deg, #6366f1, #8b5cf6);
     color: #fff;
-    padding: 16px;
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    border: none;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    transform: translateX(4px);
   }
-  .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(99,102,241,0.35); }
-  .consent { font-size: 13px; color: #64748b; margin-top: 16px; text-align: center; }
 
-  /* Footer */
   footer {
     background: #0f172a;
     color: #94a3b8;
     padding: 32px 0;
     text-align: center;
     font-size: 14px;
-    border-top: 1px solid #1e293b;
   }
 
   @media (max-width: 640px) {
-    .hero { padding: 56px 0 64px; }
-    section { padding: 48px 0; }
-    .block, .form-card { padding: 24px; }
+    header.hero { padding: 48px 0 64px; }
+    .topbar { margin-bottom: 40px; }
+    .job-card { padding: 20px 24px; gap: 16px; }
+    .job-info h3 { font-size: 18px; }
   }
 </style>
 </head>
 <body>
 
-<!-- HERO -->
 <header class="hero">
-  <div class="container hero-inner">
-    <span class="badge">🚀 We're hiring · EdTech</span>
-    <h1>Creative Producer</h1>
-    <p class="lead">Shape the creative vision of a fast-growing EdTech product. Lead campaigns that reach millions of learners worldwide.</p>
-    <div class="hero-meta">
-      <span class="chip">📍 Remote / Hybrid</span>
-      <span class="chip">🇨🇾 Cyprus · 🇵🇱 Poland</span>
-      <span class="chip">💼 Full-time</span>
-      <span class="chip">🎯 3+ years experience</span>
+  <div class="container">
+    <div class="topbar">
+      <span class="brand"><span class="brand-dot">r</span> recrut.marketing</span>
     </div>
-    <a href="#apply" class="btn btn-primary">Apply now →</a>
+    <div class="hero-content">
+      <h1>Open roles, curated for talent that moves markets.</h1>
+      <p>We run recruitment marketing for fast-growing companies in tech, EdTech and B2C. Browse current openings below.</p>
+    </div>
   </div>
 </header>
 
-<!-- INTRO -->
-<section class="intro">
+<section>
   <div class="container">
-    <h2>About the role</h2>
-    <p>We are a rapidly growing company at the forefront of innovation in the <strong>EdTech industry</strong>. Our team is dedicated to shaping the future of education through groundbreaking products and services. As we continue to expand, we are seeking a talented and experienced <strong>Creative Producer</strong> to join our dynamic team.</p>
-    <p>As a Creative Producer, you will play a crucial role in driving the creative vision and strategy for our EdTech product. You will collaborate closely with cross-functional teams to develop and implement innovative marketing campaigns that resonate with our target audience and drive user acquisition.</p>
-  </div>
-</section>
-
-<!-- RESPONSIBILITIES -->
-<section style="padding-top: 0;">
-  <div class="container">
-    <div class="block">
-      <h3>What you'll do</h3>
-      <ul>
-        <li>Set and execute social media and communication campaigns in alignment with product, research, and marketing strategies.</li>
-        <li>Lead brainstorming sessions and team activities to generate creative ideas and concepts.</li>
-        <li>Write comprehensive briefs for motion/graphic designers and content creators.</li>
-        <li>Review and approve advertising creatives, providing edits and feedback as needed.</li>
-        <li>Adapt advertising creatives for different platforms and target audiences.</li>
-        <li>Analyze the effectiveness of advertising creatives and propose enhancements based on findings.</li>
-        <li>Conduct market and competitor analysis to identify trends and opportunities.</li>
-        <li>Research and implement new tools and approaches to optimize the creative process and drive results.</li>
-      </ul>
+    <h2>Current openings</h2>
+    <div class="jobs">
+      <a href="/creative-producer" class="job-card">
+        <div class="job-info">
+          <span class="job-tag">EdTech · Marketing</span>
+          <h3>Creative Producer</h3>
+          <div class="job-meta">Remote / Hybrid · Cyprus · Poland · Full-time</div>
+        </div>
+        <div class="job-arrow">→</div>
+      </a>
     </div>
-
-    <div class="block">
-      <h3>What we're looking for</h3>
-      <ul>
-        <li>Minimum of <strong>3 years of experience</strong> in positions such as Creative Specialist, Digital Marketing Manager, or Performance Marketing.</li>
-        <li>Proven experience working with <strong>B2C mobile applications</strong>.</li>
-        <li>Proficiency in English at the <strong>Upper Intermediate</strong> level or higher.</li>
-        <li>Strong analytical and creative skills demonstrated by past results.</li>
-        <li>Experience analyzing key metrics of marketing campaigns.</li>
-        <li>Research skills and ability to write technical tasks for designers.</li>
-        <li>Copywriting skills and experience working with international markets are advantageous.</li>
-      </ul>
-    </div>
-
-    <div class="block nice">
-      <h3>Nice to have</h3>
-      <ul>
-        <li>Experience in video and UGC content creation.</li>
-        <li>Familiarity with web and app marketing.</li>
-        <li>B2C niche market experience.</li>
-        <li>Creative testing experience with Meta.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- BENEFITS -->
-<section class="benefits">
-  <div class="container">
-    <h2>Why you'll love working with us</h2>
-    <p class="sub">We invest in our people, our tools, and our culture — so you can focus on doing the best work of your career.</p>
-    <div class="benefits-grid">
-      <div class="benefit">
-        <div class="icon">✨</div>
-        <h4>Impactful work</h4>
-        <p>Your contributions will directly shape the future of our company and reach learners around the world.</p>
-      </div>
-      <div class="benefit">
-        <div class="icon">🚀</div>
-        <h4>Innovative environment</h4>
-        <p>We're all about trying new things and pushing the envelope in EdTech.</p>
-      </div>
-      <div class="benefit">
-        <div class="icon">🌍</div>
-        <h4>Freedom</h4>
-        <p>Flexible role — fully remote or hybrid from one of our offices in Cyprus or Poland.</p>
-      </div>
-      <div class="benefit">
-        <div class="icon">🏥</div>
-        <h4>Health</h4>
-        <p>Health Insurance package for hybrid mode (Cyprus, Poland) and a health corner in the Cyprus office.</p>
-      </div>
-      <div class="benefit">
-        <div class="icon">🤖</div>
-        <h4>AI tools</h4>
-        <p>GPT Chat bot / ChatGPT subscription and other tools to supercharge your workflow.</p>
-      </div>
-      <div class="benefit">
-        <div class="icon">💰</div>
-        <h4>Competitive salary</h4>
-        <p>We offer a competitive salary that reflects your experience and impact.</p>
-      </div>
-      <div class="benefit">
-        <div class="icon">🏖️</div>
-        <h4>Balance</h4>
-        <p>Flexible paid time off — 21 days of annual leave + 10 bank holidays.</p>
-      </div>
-      <div class="benefit">
-        <div class="icon">🤝</div>
-        <h4>Collaborative culture</h4>
-        <p>Work alongside passionate professionals who are as driven as you are.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- APPLY FORM -->
-<section class="apply" id="apply">
-  <div class="container">
-    <h2 style="text-align:center;">Apply for this role</h2>
-    <p class="sub" style="text-align:center; margin-left:auto; margin-right:auto;">Tell us a bit about yourself and attach your CV. We read every application and reply within a few business days.</p>
-
-    <form class="form-card"
-          action="https://formsubmit.co/olganewlife99@gmail.com"
-          method="POST"
-          enctype="multipart/form-data">
-
-      <!-- FormSubmit config -->
-      <input type="hidden" name="_subject" value="New application · Creative Producer" />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_captcha" value="true" />
-      <input type="hidden" name="_next" value="https://formsubmit.co/thanks" />
-      <input type="text" name="_honey" style="display:none" />
-
-      <!-- UTM capture (filled by JS) -->
-      <input type="hidden" name="utm_source" id="utm_source" />
-      <input type="hidden" name="utm_medium" id="utm_medium" />
-      <input type="hidden" name="utm_campaign" id="utm_campaign" />
-      <input type="hidden" name="utm_content" id="utm_content" />
-
-      <div class="field">
-        <label for="name">Full name <span class="req">*</span></label>
-        <input type="text" id="name" name="Full name" required placeholder="Jane Doe" />
-      </div>
-
-      <div class="field">
-        <label for="email">Email <span class="req">*</span></label>
-        <input type="email" id="email" name="Email" required placeholder="jane@example.com" />
-      </div>
-
-      <div class="field">
-        <label for="phone">Phone / Telegram</label>
-        <input type="tel" id="phone" name="Phone" placeholder="+357 …" />
-      </div>
-
-      <div class="field">
-        <label for="linkedin">LinkedIn / Portfolio</label>
-        <input type="url" id="linkedin" name="LinkedIn" placeholder="https://linkedin.com/in/..." />
-      </div>
-
-      <div class="field">
-        <label for="cv">Upload your CV <span class="req">*</span></label>
-        <input type="file" id="cv" name="attachment" accept=".pdf,.doc,.docx" required />
-        <div class="hint">PDF, DOC or DOCX · max 10 MB</div>
-      </div>
-
-      <div class="field">
-        <label for="message">A short note (optional)</label>
-        <textarea id="message" name="Message" placeholder="Tell us about a campaign you're proud of, or anything you'd like us to know."></textarea>
-      </div>
-
-      <button type="submit" class="btn-submit">Send application →</button>
-      <p class="consent">By submitting, you agree that we may process your data for recruitment purposes.</p>
-    </form>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    &copy; <span id="year"></span> · Creative Producer role · All rights reserved.
+    &copy; <span id="year"></span> recrut.marketing
   </div>
 </footer>
 
 <script>
-  // UTM capture → hidden form fields
-  (function() {
-    const params = new URLSearchParams(window.location.search);
-    ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(key) {
-      const el = document.getElementById(key);
-      if (el) el.value = params.get(key) || '';
-    });
-    const yr = document.getElementById('year');
-    if (yr) yr.textContent = new Date().getFullYear();
-  })();
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
